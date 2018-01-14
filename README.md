@@ -23,7 +23,7 @@ HTTP servers listens to your requests in simple format:
 `http://<hostname>/cache/<key>/`
 
 ### Get a value
-for example, to get value `A`:
+for example, to get value `A`:  
 `curl http://127.0.0.1:8080/cache/A/`
 
 
