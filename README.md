@@ -9,6 +9,9 @@
 ### Run:
 `ultime_http`
 
+### Console Client:
+[link to Client](https://github.com/Boomerangz/ultime/tree/master/cmd/ultime_http_cli)
+
 ### Server environment variables
 
 If you want to tune server's behavior, you can set environment variables  
