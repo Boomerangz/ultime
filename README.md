@@ -1,6 +1,6 @@
 # ULTIME
 
-## Your 2K18 Ultimate Redis alternative
+## Your 2K18 Ultimate Redis  Golang-powered alternative
 #### *(Not really)*
 
 ### Install:
