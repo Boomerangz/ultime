@@ -42,10 +42,12 @@ Also you can insert a structure (array or dictionary) into cache. You can do it 
 
 ### Get internal value of a structure by key 
 And you also can access to one single value of your structure with putting it's internal key into path, like:
-```curl http://127.0.0.1:8080/cache/a/0
+```
+curl http://127.0.0.1:8080/cache/a/0
 ```
 or 
-```curl http://127.0.0.1:8080/cache/a/1
+```
+curl http://127.0.0.1:8080/cache/a/1
 ```
 
 ### Set internal value of a structure by key 
