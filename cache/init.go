@@ -3,6 +3,7 @@ package cache
 import (
 	"encoding/gob"
 	"errors"
+	"fmt"
 	"log"
 	"os"
 	"path"
@@ -130,14 +131,18 @@ func (c *Cache) backgroundSaving() {
 
 func (c *Cache) SaveToDisk() error {
 	copyCache := c.cacheInstance
+	err := os.Mkdir(c.dataPath, 0777)
+	fmt.Println("create dir", c.dataPath)
+	if err != nil {
+		return err
+	}
 	file, err := os.Create(c.getDataFilePath())
-	if err == nil {
-		enc := gob.NewEncoder(file)
-		err = enc.Encode(copyCache)
-		if err != nil {
-			return err
-		}
-	} else {
+	if err != nil {
+		return err
+	}
+	enc := gob.NewEncoder(file)
+	err = enc.Encode(copyCache)
+	if err != nil {
 		return err
 	}
 	err = file.Close()
