@@ -8,13 +8,14 @@
 ### Run:
 `ultime_http`
 
-### Server enviroment variables
+### Server environment variables
 
+If you want to tune server's behavior, you can set environment variables
 `ULTIME_DATAPATH` that contains a folder for server to store it's data
-Default value is `/tmp/ultime/`
-`ULTIME_SAVINGINTERVAL` that contains a interval in seconds for server to save it's data to disk. If it is set to 0, server will save it's data only at shutdown.
-Default value is `300`
-`ULTIME_PORT` that contains a port to listen
+Default value is `/tmp/ultime/`  
+`ULTIME_SAVINGINTERVAL` that contains a interval in seconds for server to save it's data to disk. If it is set to 0, server will save it's data only at shutdown.  
+Default value is `300`.  
+`ULTIME_PORT` that contains a port to listen.  
 Default value is `8080`
 
 
