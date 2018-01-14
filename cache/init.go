@@ -133,7 +133,7 @@ func (c *Cache) SaveToDisk() error {
 	copyCache := c.cacheInstance
 	err := os.Mkdir(c.dataPath, 0777)
 	fmt.Println("create dir", c.dataPath)
-	if err != nil {
+	if err != nil && !os.IsExist(err) {
 		return err
 	}
 	file, err := os.Create(c.getDataFilePath())
