@@ -12,6 +12,9 @@
 ### Console Client:
 [link to Client](https://github.com/Boomerangz/ultime/tree/master/cmd/ultime_http_cli)
 
+### Tests
+`go test -v github.com/boomerangz/ultime/tests`
+
 ### Server environment variables
 
 If you want to tune server's behavior, you can set environment variables  
