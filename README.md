@@ -26,7 +26,8 @@ If there is no value in `expires` field or it equals to 0, so there will be no e
   -d '{  
 	"value":"asdasdadasdasd",
 	"expires": 30
-}' ```
+}'
+```
 
 ### Set a structure
 Also you can insert a structure (array or dictionary) into cache. You can do it simple sending it in JSON encoded body. For example:
@@ -36,7 +37,8 @@ Also you can insert a structure (array or dictionary) into cache. You can do it 
   -H 'Content-Type: application/json' 
   -d '{  
 	"value":["asdasdadasdasd", 123123]
-}' ```
+}'
+```
 
 ### Get internal value of a structure by key 
 And you also can access to one single value of your structure with putting it's internal key into path, like:
@@ -51,7 +53,8 @@ Setting operation is also permitted to that internal value:
   -H 'Content-Type: application/json' 
   -d '{  
 	"value":0
-}' ```
+}' 
+```
 ### Remove value from cache
 `curl -X DELETE http://127.0.0.1:8080/cache/a`
 
