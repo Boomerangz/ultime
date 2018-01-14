@@ -1,6 +1,7 @@
 # ULTIME
 
 ## Your 2K18 Ultimate Redis alternative
+#### *(Not really)*
 
 ### Install:
 `go get github.com/boomerangz/ultime/cmd/ultime_http`
