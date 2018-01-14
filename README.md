@@ -1,4 +1,5 @@
-# ultime
+# ULTIME
+
 ## Your 2K18 Ultimate Redis alternative
 
 ### Install:
