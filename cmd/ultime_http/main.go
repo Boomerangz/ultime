@@ -21,7 +21,7 @@ func main() {
 	router.POST("/cache/:name", HttpLog(Set))
 	router.POST("/cache/:name/:key", HttpLog(SetByKey))
 	router.DELETE("/cache/:name", HttpLog(Remove))
-	router.GET("/cache-keys/", HttpLog(Keys))
+	router.GET("/cache-keys", HttpLog(Keys))
 	port := config.GetConfig().Port
 	log.Printf("Starting server and %d\n", port)
 
