@@ -16,7 +16,7 @@ func init() {
 }
 
 type Config struct {
-	DataPath       string `default:"./"`
+	DataPath       string `default:"/tmp/ultime/"`
 	Port           uint32 `default:"8080"`
 	SavingInterval uint32 `default:"300"`
 

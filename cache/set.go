@@ -6,6 +6,9 @@ import (
 	"github.com/boomerangz/ultime/cache/types"
 )
 
+//function to set value to cache, requires key, value to set.
+//also function receives Expires parameter, which hadles Time to store value in seconds
+//if expires == 0 then value is stored infinetely
 func Set(key string, value interface{}, expires int) error {
 	CacheInstance.Set(key, wrapValue(value), expires)
 	return nil
@@ -27,6 +30,9 @@ func wrapValue(value interface{}) types.CacheValueInterface {
 	}
 }
 
+//function to set value into stored structure (array or dict)
+//receives cache key of structure, internal key that references to inside structure place and value to set
+//it is impossible to set Expiring value inside structure
 func SetByKey(key string, internalKey string, setValue interface{}) error {
 	valueWrapper, err := CacheInstance.Get(key)
 	if err != nil {

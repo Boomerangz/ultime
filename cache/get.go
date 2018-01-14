@@ -6,6 +6,7 @@ import (
 	"github.com/boomerangz/ultime/cache/types"
 )
 
+//Function to get value out of cache, requires a key
 func Get(key string) (interface{}, error) {
 	valueWrapper, err := CacheInstance.Get(key)
 	if err != nil {
@@ -15,6 +16,7 @@ func Get(key string) (interface{}, error) {
 	return value.GetValue(), err
 }
 
+//Function to get value out structure (array or dict) stored in cache, requires a key and an internal key
 func GetByKey(key string, internalKey string) (interface{}, error) {
 	valueWrapper, err := CacheInstance.Get(key)
 	if err != nil {
