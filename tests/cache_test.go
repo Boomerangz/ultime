@@ -160,7 +160,6 @@ func testForSetByKey(t *testing.T, key string, internalKey string, internalValue
 
 func TestPersistance(t *testing.T) {
 	os.RemoveAll("./test_files/")
-	os.Mkdir("./test_files/", 0777)
 
 	key := "Key"
 	settedValue := []interface{}{[]string{"1", "2"}, "3"}
