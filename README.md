@@ -31,7 +31,7 @@ HTTP servers listens to your requests in simple format:
 
 ### Get a value
 for example, to get value `A`:  
-`curl http://127.0.0.1:8080/cache/A/`
+`curl http://127.0.0.1:8080/cache/A`
 
 
 ### Set a value
