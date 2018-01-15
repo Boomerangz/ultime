@@ -40,7 +40,8 @@ JSON encoded body must contain field `value` with value you want to set,
 and *CAN* contain not necessary field `expires` that contains field with Seconds.
 If there is no value in `expires` field or it equals to 0, so there will be no expiration time for this value.
  
-```curl -X POST
+```
+curl -X POST
   http://127.0.0.1:8080/cache/a 
   -H 'Content-Type: application/json' 
   -d '{  
@@ -52,7 +53,8 @@ If there is no value in `expires` field or it equals to 0, so there will be no e
 ### Set a structure
 Also you can insert a structure (array or dictionary) into cache. You can do it simple sending it in JSON encoded body. For example:
 
-```curl -X POST  
+```
+curl -X POST  
   http://127.0.0.1:8080/cache/a 
   -H 'Content-Type: application/json' 
   -d '{  
@@ -72,7 +74,8 @@ curl http://127.0.0.1:8080/cache/a/1
 
 ### Set internal value of a structure by key 
 Setting operation is also permitted to that internal value:
-```curl -X POST  
+```
+curl -X POST  
   http://127.0.0.1:8080/cache/a/0 
   -H 'Content-Type: application/json' 
   -d '{  
